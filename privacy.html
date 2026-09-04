@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — Shue</title>
+  <meta name="description" content="Shue privacy policy, including how we handle SMS/mobile opt-in data." />
+  <style>
+    :root{
+      --bg:#0a0a0b; --bg-soft:#141416; --border:#26262b; --fg:#f4f4f5; --muted:#a1a1aa; --accent:#d7ff2e; --max:760px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.7}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+    header.nav{border-bottom:1px solid var(--border)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px;max-width:var(--max);margin:0 auto;padding:0 24px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;letter-spacing:-.02em;text-decoration:none;color:var(--fg)}
+    .brand .dot{width:12px;height:12px;border-radius:4px;background:var(--accent)}
+    .nav-inner a.back{color:var(--muted);text-decoration:none;font-size:15px}
+    .nav-inner a.back:hover{color:var(--fg)}
+    main{padding:56px 0 80px}
+    h1{font-size:clamp(30px,5vw,44px);letter-spacing:-.02em;margin:0 0 8px}
+    .updated{color:var(--muted);font-size:14px;margin-bottom:40px}
+    h2{font-size:22px;letter-spacing:-.01em;margin:40px 0 10px}
+    p,li{color:#d4d4d8}
+    a{color:var(--accent)}
+    ul{padding-left:20px}
+    li{margin-bottom:8px}
+    .callout{background:var(--bg-soft);border:1px solid var(--border);border-radius:14px;padding:20px 22px;margin:24px 0}
+    footer{border-top:1px solid var(--border);padding:28px 0;color:var(--muted);font-size:14px}
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="brand"><span class="dot"></span> Shue</a>
+      <a href="index.html" class="back">&larr; Back to home</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <h1>Privacy Policy</h1>
+      <div class="updated">Last updated: <span id="date"></span></div>
+
+      <p>This Privacy Policy describes how ShueApp ("ShueApp," "we," "us," or "our") collects, uses, and protects information when you use our sneaker marketplace and related services (the "Service").</p>
+
+      <h2>Information we collect</h2>
+      <ul>
+        <li><strong>Account information</strong> — name, username, email address, and profile details you provide when you register.</li>
+        <li><strong>Mobile phone number</strong> — provided by you if you opt in to SMS text messaging.</li>
+        <li><strong>Transaction information</strong> — listings, orders, bids, raffle entries, and preorders you create or participate in.</li>
+        <li><strong>Usage information</strong> — basic technical data such as device and log information used to operate and secure the Service.</li>
+      </ul>
+
+      <h2>How we use information</h2>
+      <ul>
+        <li>To provide, operate, and improve the Service.</li>
+        <li>To process transactions and communicate about listings, orders, auctions, raffles, and preorders.</li>
+        <li>To send account and transactional SMS messages to users who opt in (see below).</li>
+        <li>To protect the security and integrity of the Service and prevent fraud.</li>
+      </ul>
+
+      <h2>SMS / mobile messaging</h2>
+      <p>If you provide your mobile number and opt in, we may send you account and transactional text messages such as verification codes, order and shipping updates, auction and bid alerts, and raffle results.</p>
+      <div class="callout">
+        <strong>No mobile information will be shared with third parties or affiliates for marketing or promotional purposes.</strong>
+        All categories mentioned above exclude text-messaging originator opt-in data and consent; this information will not be shared with any third parties.
+      </div>
+      <ul>
+        <li>Message frequency varies based on your account activity.</li>
+        <li>Message and data rates may apply.</li>
+        <li>Reply <strong>STOP</strong> to unsubscribe at any time; reply <strong>HELP</strong> for help.</li>
+      </ul>
+
+      <h2>How we share information</h2>
+      <p>We do not sell your personal information. We may share information only as needed to operate the Service (for example, with service providers who process payments or deliver messages on our behalf) or as required by law. As stated above, mobile opt-in and consent data are never shared for marketing purposes.</p>
+
+      <h2>Data retention &amp; security</h2>
+      <p>We retain information for as long as your account is active or as needed to provide the Service and meet legal obligations. We use reasonable administrative and technical safeguards to protect your information.</p>
+
+      <h2>Your choices</h2>
+      <ul>
+        <li>You may opt out of SMS messages at any time by replying STOP.</li>
+        <li>You may request access to or deletion of your account information by contacting us.</li>
+      </ul>
+
+      <h2>Contact us</h2>
+      <p>If you have questions about this Privacy Policy, contact us at <a href="mailto:nexinocs@gmail.com">nexinocs@gmail.com</a>.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="year"></span> ShueApp. All rights reserved.</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('date').textContent = new Date().toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
+  </script>
+</body>
+</html>
