@@ -1,41 +1,36 @@
-# Shue — Landing Page
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A simple, static marketing/description page for the **Shue** sneaker marketplace.
-Built as plain HTML/CSS (no build step) so it deploys anywhere instantly. Intended to
-satisfy Twilio A2P/10DLC (or similar) verification requirements that ask for a public
-website with a project description, SMS messaging/consent disclosure, contact info, and
-a privacy policy.
+## Getting Started
 
-## Files
-- `index.html` — landing page: hero, features, SMS/messaging consent, contact.
-- `privacy.html` — privacy policy (includes mobile opt-in data handling).
-
-## Preview locally
-Just open `index.html` in a browser, or serve the folder:
+First, run the development server:
 
 ```bash
-npx serve .
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## Deploy to Vercel (its own project)
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-**Option A — Vercel dashboard (recommended):**
-1. Push this folder to a new GitHub repo.
-2. In the Vercel dashboard: **Add New… → Project → Import** the repo.
-3. Framework preset: **Other**. No build command, output directory: `.` (root).
-4. Deploy.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-**Option B — Vercel CLI:**
-```bash
-npm i -g vercel
-vercel        # from inside this folder; accept defaults, framework = Other
-vercel --prod
-```
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Business details (already filled in)
-- Business name: **ShueApp**
-- Support / contact email: **nexinocs@gmail.com**
-- Location: **Oakland, CA**
+## Learn More
 
-Confirm the SMS section in `index.html` matches how you actually collect consent and what
-messages you send before submitting for verification.
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
